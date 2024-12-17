@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Lexend Deca", serif;
+            text-decoration: none;
+        }
+
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(99, 213, 241);
+        }
+        .heading{
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .heading h2{
+            font-size: 2rem;
+            color: #2a2a2a;
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+        form{
+           background-color: white;
+           display: flex;
+           flex-direction: column;
+           justify-content: space-between;
+           padding: 20px;
+           border: 1px solid #ccc;
+           border-radius: 10px;
+           width: 50%;
+           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .username{
+            display: flex;
+            flex-direction: column;
+        }
+        label{
+            font-size: 15px;
+            color: rgb(51, 51, 51);
+            text-transform: capitalize;
+            margin-bottom: 5px;
+
+        }
+        input{
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            font-weight: 200;
+            width: 100%;
+        }
+        .email{
+            display: flex;
+            flex-direction: column;
+        }
+        .password{
+            display: flex;
+            flex-direction: column;
+        }
+        .forgot-pass{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+        .forgot-pass a{
+           color: rgb(41, 41, 41);
+           
+        }
+        .submit-btn{
+            padding: 15px 30px;
+            display: flex;
+            justify-content: center;
+            border-radius: 5px;
+            background: #ffd0d0;
+            margin-bottom: 25px;
+            transition: all ease 0.4s;
+        }
+        .submit-btn:hover{
+            background: #ff6e6e;
+            cursor: pointer;
+        }
+        .submit-btn a{
+            color: rgb(255, 255, 255);
+            text-transform: capitalize;
+        }
+        .other-links{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-bottom: 25px;
+        }
+        .other-links .apple{
+            padding: 10px 50px;
+            background: black;
+            color: white;
+            font-size: 15px;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+        }
+        .other-links .google{
+            padding: 10px 50px;
+            background: rgb(255, 80, 80);
+            color: white;
+            font-size: 15px;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+        }
+        .other-links .facebook{
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            background: rgb(61, 184, 255);
+            color: white;
+            font-size: 15px;
+            border-radius: 3px;
+            width: auto;
+        }
+        .sign-up{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            color: #fd9e9e;
+            width: auto;
+        }
+        .sign-up a{
+            color: #fd9e9e;
+            transition: all ease 0.4s;
+        }
+        .sign-up a:hover{
+            color: #ff4343;
+        }
+    </style>
+</head>
+<body>
+    
+    <form>
+        <div class="heading">
+            <h2>log in...</h2>
+        </div>
+        <div class="username">
+            <label for="">username</label>
+            <input type="text" name="username" id="username" placeholder="write your name...">
+        </div>
+        <div class="email">
+            <label for="">email</label>
+            <input type="email" name="username" id="username" placeholder="@gmail.com...">
+        </div>
+        <div class="password">
+            <label for="">password</label>
+            <input type="password" name="password" id="username" placeholder="password....">
+        </div>
+        <div class="forgot-pass">
+            <a href="">forgot password?</a>
+        </div>
+        <div class="submit-btn">
+            <a href="">submit</a>
+         </div>
+         <div class="other-links">
+            <a href="https://account.apple.com/" target="_blank" class="apple">apple</a>
+            <a href="https://www.google.com/intl/en-GB/account/about/" target="_blank" class="google">google</a>
+            <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F" target="_blank" class="facebook">facebook</a>
+         </div>
+         <div class="sign-up">
+            <a href="sign up.html" target="_blank">dont have an account? sign up now</a>
+         </div>
+    </form>
+     
+</body>
+</html>
